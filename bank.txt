@@ -1,0 +1,55 @@
+About this file
+Attribute Information:
+
+1. age (numeric)
+2. job : type of job (categorical:admin.','bluecollar','entrepreneur','housemaid','management','retired','self-employed','services','student',
+'technician','unemployed','unknown')
+3. marital : marital status (categorical:'divorced','married','single'; note: 'divorced' means divorced or widowed)
+4. education (categorical: 'primary','secondary','tertiary','unknown')
+5. default: has credit in default? (categorical: 'no','yes') [tem crédito em inadimplência?]
+6. balance: average yearly balance, in euros (numeric) [saldo médio anual]
+7. housing: has housing loan? (categorical: 'no','yes') [tem empréstimo imobiliário?]
+8. loan: has personal loan? (categorical: 'no','yes')
+9. contact: contact communication type (categorical:'cellular','telephone','unknown')
+10. day: last contact day of the month (numeric 1 -31)
+11. month: last contact month of year (categorical: 'jan', 'feb','mar', …, 'nov', 'dec')
+12. duration: last contact duration, in seconds (numeric).
+Important note: this attribute highly affects the output target (e.g., ifduration=0 then y='no'). 
+Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known.
+Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to 
+have a realistic predictive model.
+13. campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+14. pdays: number of days that passed by after the client was last contacted from a previous 
+campaign (numeric; -1 means client was not previously contacted)
+15. previous: number of contacts performed before this campaign and for this client (numeric)
+16. poutcome: outcome of the previous marketing campaign(categorical: 'failure','other','success','unknown') [resultado da campanha de marketing anterior]
+17. y (target): has the client subscribed a term deposit? (binary:"yes","no")
+
+
+● ● ● Bancos ● ● ●
+
+O case consiste na análise de um conjunto de dados usando preferencialmente a linguagem de programação Python ou 
+R e quaisquer bibliotecas que julgue necessárias.
+
+Critérios de Avaliação:
+● Capacidade de entender e solucionar problemas
+● Conhecimentos em Machine Learning
+● Visualização de dados
+● Conhecimentos em estatística
+● Linguagem de programação
+● Apresentação dos resultados
+
+Questões:
+● Faça a análise exploratória dos dados, apresente em forma de gráficos e estatísticas dos dados
+● Quais os 3 principais fatores que levam a contratação de um depósito a prazo?
+● Qual a chance de uma pessoa aposentada com 59 anos ou mais contratar um depósito a prazo?
+● Qual a relação entre o resultado da campanha anterior e a contratação do depósito a prazo?
+● Crie um modelo preditivo para a previsão da contratação de um depósito a prazo que desconsidere as 
+3 variáveis menos importantes para a contratação.
+● Fale sobre as dificuldades que o modelo construído poderia ter para alcançar o sucesso esperado 
+pelo treino em um novo dataset. 
+
+Entregáveis:
+● Uma apresentação focada no cliente, que traga os insights de forma didática para pessoas não técnicas. 
+● Conjunto de arquivos de códigos e documentações (em github privado) focadas em pessoas técnicas que 
+poderiam dar continuidade ao trabalho de desenvolvimento e/ou produtização de forma independente.
